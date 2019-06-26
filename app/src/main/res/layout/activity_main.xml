@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="presenter"
+            type="com.zh.shortcuts.MainActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FAFAFA"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="个人主页"
+            android:background="#FFF"
+            android:onClick="@{()->presenter.onUserInfoClicked()}"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="百度"
+            android:layout_marginTop="5dp"
+            android:background="#FFF"
+            android:onClick="@{()->presenter.onWebClicked(0)}"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="github"
+            android:layout_marginTop="5dp"
+            android:background="#FFF"
+            android:onClick="@{()->presenter.onWebClicked(1)}"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="固定创建快捷方式"
+            android:layout_marginTop="5dp"
+            android:background="#FFF"
+            android:onClick="@{()->presenter.onPinnedCreateClicked()}"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="动态创建快捷方式"
+            android:layout_marginTop="5dp"
+            android:background="#FFF"
+            android:onClick="@{()->presenter.onCreateClicked()}"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="修改快捷方式"
+            android:layout_marginTop="5dp"
+            android:background="#FFF"
+            android:onClick="@{()->presenter.onUpdateClicked()}"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textSize="16sp"
+            android:text="删除快捷方式"
+            android:layout_marginTop="5dp"
+            android:background="#FFF"
+            android:onClick="@{()->presenter.onDelClicked()}"
+            />
+    </LinearLayout>
+
+</layout>

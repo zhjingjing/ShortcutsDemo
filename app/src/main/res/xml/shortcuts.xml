@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="intent_user"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_user_short_label"
+        android:shortcutLongLabel="@string/shortcut_user_long_label"
+        android:shortcutDisabledMessage="@string/shortcut_user_disable_label">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.zh.shortcuts"
+            android:targetClass="com.zh.shortcuts.UserInfoActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="intent_web"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_web_short_label"
+        android:shortcutLongLabel="@string/shortcut_web_long_label"
+        android:shortcutDisabledMessage="@string/shortcut_web_disable_label">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.zh.shortcuts"
+            android:targetClass="com.zh.shortcuts.WebActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>

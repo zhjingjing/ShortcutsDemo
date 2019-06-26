@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ShortcutsDemo</string>
+
+    <string name="shortcut_user_short_label">个人主页</string>
+    <string name="shortcut_user_long_label">个人主页long</string>
+    <string name="shortcut_user_disable_label">个人主页disable</string>
+
+    <string name="shortcut_web_short_label">webView</string>
+    <string name="shortcut_web_long_label">webView_long</string>
+    <string name="shortcut_web_disable_label">webView_disable</string>
+</resources>
